@@ -1,59 +1,172 @@
-# BookstoreFrontend
+Here’s a polished **README.md** you can use for your GitHub repository — complete with setup instructions, project overview, and feature list.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
+---
 
-## Development server
+# 📚 Bookstore Angular App
 
-To start a local development server, run:
+A **modern Angular application** for managing a collection of books — featuring CRUD operations, routing, guards, reactive forms, and reusable components.
+This project is built using **standalone Angular components** and demonstrates all key Angular concepts.
 
-```bash
-ng serve
+---
+
+## 🚀 Features
+
+- ✅ **CRUD Operations** (Create, Read, Update, Delete books)
+- 🔒 **Authentication & Route Guards**
+- 📖 **Routing & Navigation**
+- 💡 **Reusable Components, Pipes, and Directives**
+- 🧩 **Reactive Forms for Book Management**
+- 🎨 **Bootstrap-based Responsive UI**
+- ⚙️ **HTTP Services & Interceptors**
+- 🧭 **Lifecycle Hooks and Data Binding**
+
+---
+
+## 🏗️ Project Structure
+
+```
+bookstore-frontend/
+│
+├── angular.json
+├── package.json
+├── tsconfig.json
+│
+└── src/
+    ├── app/
+    │   ├── core/
+    │   │   ├── guards/
+    │   │   ├── interceptors/
+    │   │   ├── services/
+    │   │   └── core.module.ts
+    │   ├── shared/
+    │   │   ├── components/
+    │   │   ├── directives/
+    │   │   ├── pipes/
+    │   │   └── shared.module.ts
+    │   ├── features/
+    │   │   ├── books/
+    │   │   │   ├── components/
+    │   │   │   ├── pages/
+    │   │   │   └── books.module.ts
+    │   │   └── auth/
+    │   │       └── auth.module.ts
+    │   ├── pages/
+    │   ├── models/
+    │   ├── app-routing.module.ts
+    │   ├── app.component.*
+    │   └── app.module.ts
+    │
+    ├── assets/
+    ├── environments/
+    ├── index.html
+    ├── main.ts
+    └── styles.css
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧠 Key Concepts Demonstrated
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+| Angular Concept             | Where It’s Used                            |
+| --------------------------- | ------------------------------------------ |
+| **Interpolation / Binding** | Book list and detail views                 |
+| **@Input / @Output**        | Between book-item and book-list components |
+| **Lifecycle Hooks**         | Used in components to track data flow      |
+| **Directives**              | Custom highlight directive                 |
+| **Reactive Forms**          | Book creation & editing forms              |
+| **Routing & Guards**        | Navigation and route protection            |
+| **Services & HTTPClient**   | Book and Auth services                     |
+| **Pipes**                   | Custom search pipe for filtering books     |
 
-```bash
-ng generate component component-name
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/bookstore-frontend.git
+   cd bookstore-frontend
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   ng serve
+   ```
+
+   The app will be live at **[http://localhost:4200/](http://localhost:4200/)**
+
+4. **Build for production**
+
+   ```bash
+   ng build --prod
+   ```
+
+---
+
+## 🧩 API Connection
+
+This app expects a **Bookstore API** backend exposing REST endpoints such as:
+
+| Method | Endpoint         | Description          |
+| ------ | ---------------- | -------------------- |
+| GET    | `/api/books`     | Fetch all books      |
+| GET    | `/api/books/:id` | Fetch single book    |
+| POST   | `/api/books`     | Add a new book       |
+| PUT    | `/api/books/:id` | Update existing book |
+| DELETE | `/api/books/:id` | Delete a book        |
+
+Set your API base URL in:
+
+```
+src/environments/environment.ts
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+
+## 🧰 Dependencies
+
+- `@angular/core`
+- `@angular/router`
+- `@angular/forms`
+- `@angular/common/http`
+- `rxjs`
+- `bootstrap`
+
+Install Bootstrap:
 
 ```bash
-ng generate --help
+npm install bootstrap
 ```
 
-## Building
+Then import it in `angular.json` under `styles`.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🎨 UI Example
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Home Page:** Overview and navigation
+- **Books Page:** List of all books with options to view, edit, or delete
+- **Add/Edit Page:** Form with validation using reactive forms
+- **Login Page:** Authenticates user and enables route protection
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🧑‍💻 Authors
 
-```bash
-ng test
-```
+**Ebraheem Elsharkawy**
+Frontend Developer | Angular Enthusiast
+📧 [[ebraheemelsharkawy@gmail.com](mailto:ebraheemelsharkawy@gmail.com)]
+💼 [LinkedIn](https://www.linkedin.com/in/ebraheem-elsharkawy-538924173/)
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Abdelrahman Zenhom**
+Frontend Developer | Angular Enthusiast
+📧 [[exampley@gmail.com](mailto:example@gmail.com)]
+💼 [LinkedIn](https://linkedin.com/in/your-link)
