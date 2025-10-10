@@ -1,19 +1,19 @@
-<form class="container my-4">
+<form [formGroup]="bookForm" class="container my-4" (submit)="onSubmit()">
   <div class="mb-3">
     <label for="inputBookTitle" class="form-label">Book title:</label>
-    <input type="text" class="form-control" name="bookTitle" id="inputBookTitle">
+    <input type="text" class="form-control" formControlName="title" name="bookTitle" id="inputBookTitle">
   </div>
   <div class="mb-3">
     <label for="inputDescription" class="form-label">Description:</label>
-    <input type="text" class="form-control" name="bookDesc" id="inputDescription">
+    <input type="text" class="form-control" formControlName="description" name="bookDesc" id="inputDescription">
   </div>
   <div class="mb-3">
     <label for="inputAuthor" class="form-label">Author:</label>
-    <input type="text" class="form-control" name="bookAuthor" id="inputAuthor">
+    <input type="text" class="form-control" formControlName="author" name="bookAuthor" id="inputAuthor">
   </div>
   <div class="mb-3">
     <label for="inputPublishingYear" class="form-label">Publishing year:</label>
-    <input type="text" class="form-control" name="bookYear" id="inputPublishingYear">
+    <input type="text" class="form-control" formControlName="publishedYear" name="bookYear" id="inputPublishingYear">
   </div>
   <button type="submit" class="btn btn-primary">Add Book</button>
 </form>

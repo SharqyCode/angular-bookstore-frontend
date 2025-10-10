@@ -1,1 +1,411 @@
-{"books":[{"title":"1984","description":"A dystopian novel exploring surveillance, totalitarianism, and loss of identity.","author":"George Orwell","publishingYear":1949,"coverURL":"https://covers.openlibrary.org/b/id/7222246-L.jpg","id":"5193fe00-35fa-4794-a166-3a298a9f965e"},{"title":"To Kill a Mockingbird","description":"A profound story of racial injustice and moral growth in the American South.","author":"Harper Lee","publishingYear":1961,"coverURL":"https://covers.openlibrary.org/b/id/8228691-L.jpg","id":"d3f7a2f2-657d-4821-9227-7eb50fda3bbd"},{"title":"The Great Gatsby","description":"A tragic tale of love, wealth, and the elusive American Dream.","author":"F. Scott Fitzgerald","publishingYear":1927,"coverURL":"https://covers.openlibrary.org/b/id/6519016-L.jpg","id":"22454070-ffeb-4e7b-b58e-5b2b870a91bd"},{"title":"Pride and Prejudice","description":"A witty and romantic critique of social class and gender expectations.","author":"Jane Austen","publishingYear":1816,"coverURL":"https://covers.openlibrary.org/b/id/8091016-L.jpg","id":"bd154850-8459-4632-949d-2f49ed4d01eb"},{"title":"The Catcher in the Rye","description":"A teenage boy’s journey through alienation and rebellion in postwar America.","author":"J.D. Salinger","publishingYear":1955,"coverURL":"https://covers.openlibrary.org/b/id/8231856-L.jpg","id":"89e7c718-bc54-4ee1-bcf4-011fa6d149b6"},{"title":"The Hobbit","description":"A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.","author":"J.R.R. Tolkien","publishingYear":1937,"coverURL":"https://covers.openlibrary.org/b/id/6979861-L.jpg","id":"a9adc1d7-8a5f-4afd-a484-c26a7bbc86c9"},{"title":"Moby Dick","description":"A seafaring tale of obsession and revenge against a white whale.","author":"Herman Melville","publishingYear":1852,"coverURL":"https://covers.openlibrary.org/b/id/5554440-L.jpg","id":"cafd7c6a-cb99-4946-abb7-0fd82055c651"},{"title":"Brave New World","description":"A futuristic society driven by technology, control, and conformity.","author":"Aldous Huxley","publishingYear":1934,"coverURL":"https://covers.openlibrary.org/b/id/8775116-L.jpg","id":"d51d7aa7-6d3e-458a-a819-cf4ac013ceae"},{"title":"Jane Eyre","description":"A gothic romance following an orphan’s resilience and moral conviction.","author":"Charlotte Brontë","publishingYear":1850,"coverURL":"https://covers.openlibrary.org/b/id/8076764-L.jpg","id":"eb3d2c10-ae78-4b6d-bb17-450d89fc0943"},{"title":"Wuthering Heights","description":"A haunting love story set on the moors of northern England.","author":"Emily Brontë","publishingYear":1851,"coverURL":"https://covers.openlibrary.org/b/id/8235111-L.jpg","id":"049555d2-5a5b-436c-b36d-a89a1eecb10d"},{"title":"1984","description":"A dystopian novel exploring surveillance, totalitarianism, and loss of identity.","author":"George Orwell","publishingYear":1949,"coverURL":"https://covers.openlibrary.org/b/id/7222246-L.jpg","id":"1208603a-7397-4f90-890e-c568d72ceb82"},{"title":"To Kill a Mockingbird","description":"A profound story of racial injustice and moral growth in the American South.","author":"Harper Lee","publishingYear":1961,"coverURL":"https://covers.openlibrary.org/b/id/8228691-L.jpg","id":"d62cd148-3264-4753-b5e8-07c19b278a16"},{"title":"The Great Gatsby","description":"A tragic tale of love, wealth, and the elusive American Dream.","author":"F. Scott Fitzgerald","publishingYear":1927,"coverURL":"https://covers.openlibrary.org/b/id/6519016-L.jpg","id":"5272adec-15dd-43a4-844e-b05cf33e8842"},{"title":"Pride and Prejudice","description":"A witty and romantic critique of social class and gender expectations.","author":"Jane Austen","publishingYear":1816,"coverURL":"https://covers.openlibrary.org/b/id/8091016-L.jpg","id":"4cbca053-55f4-45ba-8afb-116e59db11cc"},{"title":"The Catcher in the Rye","description":"A teenage boy’s journey through alienation and rebellion in postwar America.","author":"J.D. Salinger","publishingYear":1955,"coverURL":"https://covers.openlibrary.org/b/id/8231856-L.jpg","id":"fbfc321f-ef2a-4af4-b96a-70d3272ed690"},{"title":"The Hobbit","description":"A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.","author":"J.R.R. Tolkien","publishingYear":1937,"coverURL":"https://covers.openlibrary.org/b/id/6979861-L.jpg","id":"f9155e61-6575-48f6-ba05-35ac4d1f9cb2"},{"title":"Moby Dick","description":"A seafaring tale of obsession and revenge against a white whale.","author":"Herman Melville","publishingYear":1852,"coverURL":"https://covers.openlibrary.org/b/id/5554440-L.jpg","id":"81a0dacf-c9c8-43b3-b066-27466ea9909f"},{"title":"Brave New World","description":"A futuristic society driven by technology, control, and conformity.","author":"Aldous Huxley","publishingYear":1934,"coverURL":"https://covers.openlibrary.org/b/id/8775116-L.jpg","id":"5099f51c-3c8a-4a32-917b-ebb81a7f1caa"},{"title":"Jane Eyre","description":"A gothic romance following an orphan’s resilience and moral conviction.","author":"Charlotte Brontë","publishingYear":1850,"coverURL":"https://covers.openlibrary.org/b/id/8076764-L.jpg","id":"5f00f472-4945-4b4c-8d43-8939c8600981"},{"title":"Wuthering Heights","description":"A haunting love story set on the moors of northern England.","author":"Emily Brontë","publishingYear":1851,"coverURL":"https://covers.openlibrary.org/b/id/8235111-L.jpg","id":"a92097b4-ceb1-4fb5-951b-7e7ffde6dc8f"},{"title":"1984","description":"A dystopian novel exploring surveillance, totalitarianism, and loss of identity.","author":"George Orwell","publishingYear":1949,"coverURL":"https://covers.openlibrary.org/b/id/7222246-L.jpg","id":"f751f3d4-355a-4f02-8750-92b1ede0a5cc"},{"title":"To Kill a Mockingbird","description":"A profound story of racial injustice and moral growth in the American South.","author":"Harper Lee","publishingYear":1961,"coverURL":"https://covers.openlibrary.org/b/id/8228691-L.jpg","id":"e78b57f4-22b5-4033-a315-e84aca488630"},{"title":"The Great Gatsby","description":"A tragic tale of love, wealth, and the elusive American Dream.","author":"F. Scott Fitzgerald","publishingYear":1927,"coverURL":"https://covers.openlibrary.org/b/id/6519016-L.jpg","id":"e2a39628-1904-4ac8-93a6-da49c4275ab5"},{"title":"Pride and Prejudice","description":"A witty and romantic critique of social class and gender expectations.","author":"Jane Austen","publishingYear":1816,"coverURL":"https://covers.openlibrary.org/b/id/8091016-L.jpg","id":"494470d7-8f09-43ac-a64c-02c8ad277dff"},{"title":"The Catcher in the Rye","description":"A teenage boy’s journey through alienation and rebellion in postwar America.","author":"J.D. Salinger","publishingYear":1955,"coverURL":"https://covers.openlibrary.org/b/id/8231856-L.jpg","id":"048ac0ab-8893-481a-a0fd-e6a17ce6bcd5"},{"title":"The Hobbit","description":"A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.","author":"J.R.R. Tolkien","publishingYear":1937,"coverURL":"https://covers.openlibrary.org/b/id/6979861-L.jpg","id":"f0b9e9bc-e85e-4894-ade4-1081ee6575db"},{"title":"Moby Dick","description":"A seafaring tale of obsession and revenge against a white whale.","author":"Herman Melville","publishingYear":1852,"coverURL":"https://covers.openlibrary.org/b/id/5554440-L.jpg","id":"6ff266a6-d0ba-4744-b412-fd628edb67b9"},{"title":"Brave New World","description":"A futuristic society driven by technology, control, and conformity.","author":"Aldous Huxley","publishingYear":1934,"coverURL":"https://covers.openlibrary.org/b/id/8775116-L.jpg","id":"110786a9-50f2-49ba-9420-b1e8cdedddd2"},{"title":"Jane Eyre","description":"A gothic romance following an orphan’s resilience and moral conviction.","author":"Charlotte Brontë","publishingYear":1850,"coverURL":"https://covers.openlibrary.org/b/id/8076764-L.jpg","id":"f3cdd516-19d6-4c7a-9371-349cdf863ef9"},{"title":"Wuthering Heights","description":"A haunting love story set on the moors of northern England.","author":"Emily Brontë","publishingYear":1851,"coverURL":"https://covers.openlibrary.org/b/id/8235111-L.jpg","id":"020046b7-98f0-4870-a5da-38982f2c30ae"},{"title":"1984","description":"A dystopian novel exploring surveillance, totalitarianism, and loss of identity.","author":"George Orwell","publishingYear":1949,"coverURL":"https://covers.openlibrary.org/b/id/7222246-L.jpg","id":"5f98d31f-a9e2-4199-bf1f-ceb1ebbb83cc"},{"title":"To Kill a Mockingbird","description":"A profound story of racial injustice and moral growth in the American South.","author":"Harper Lee","publishingYear":1961,"coverURL":"https://covers.openlibrary.org/b/id/8228691-L.jpg","id":"ccabefb4-e5fd-4da8-b5a5-ad984afc2216"},{"title":"The Great Gatsby","description":"A tragic tale of love, wealth, and the elusive American Dream.","author":"F. Scott Fitzgerald","publishingYear":1927,"coverURL":"https://covers.openlibrary.org/b/id/6519016-L.jpg","id":"64d577cf-0a88-486c-9fea-b06e5173edb9"},{"title":"Pride and Prejudice","description":"A witty and romantic critique of social class and gender expectations.","author":"Jane Austen","publishingYear":1816,"coverURL":"https://covers.openlibrary.org/b/id/8091016-L.jpg","id":"659208d0-221f-457f-92b2-a2a5122b3f89"},{"title":"The Catcher in the Rye","description":"A teenage boy’s journey through alienation and rebellion in postwar America.","author":"J.D. Salinger","publishingYear":1955,"coverURL":"https://covers.openlibrary.org/b/id/8231856-L.jpg","id":"21b79c4a-6ff9-49c1-891e-017e40a9e83f"},{"title":"The Hobbit","description":"A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.","author":"J.R.R. Tolkien","publishingYear":1937,"coverURL":"https://covers.openlibrary.org/b/id/6979861-L.jpg","id":"0a38332c-a3d5-4cbc-a99d-b9d0205a4453"},{"title":"Moby Dick","description":"A seafaring tale of obsession and revenge against a white whale.","author":"Herman Melville","publishingYear":1852,"coverURL":"https://covers.openlibrary.org/b/id/5554440-L.jpg","id":"3806511c-52d7-4ad2-8d50-c716c0181ee0"},{"title":"Brave New World","description":"A futuristic society driven by technology, control, and conformity.","author":"Aldous Huxley","publishingYear":1934,"coverURL":"https://covers.openlibrary.org/b/id/8775116-L.jpg","id":"809208a2-cd1b-43e0-813a-7d793535cce9"},{"title":"Jane Eyre","description":"A gothic romance following an orphan’s resilience and moral conviction.","author":"Charlotte Brontë","publishingYear":1850,"coverURL":"https://covers.openlibrary.org/b/id/8076764-L.jpg","id":"1e29a1a3-1428-4466-96e5-7acb28f03908"},{"title":"Wuthering Heights","description":"A haunting love story set on the moors of northern England.","author":"Emily Brontë","publishingYear":1851,"coverURL":"https://covers.openlibrary.org/b/id/8235111-L.jpg","id":"833821c7-4dcf-495f-9bfd-e858ffdacb7a"},{"title":"1984","description":"A dystopian novel exploring surveillance, totalitarianism, and loss of identity.","author":"George Orwell","publishingYear":1949,"coverURL":"https://covers.openlibrary.org/b/id/7222246-L.jpg","id":"980b4009-84c4-4f61-86ec-d80a35abb750"},{"title":"To Kill a Mockingbird","description":"A profound story of racial injustice and moral growth in the American South.","author":"Harper Lee","publishingYear":1961,"coverURL":"https://covers.openlibrary.org/b/id/8228691-L.jpg","id":"3743be42-dacd-4307-9f44-fd1f28a74a0e"},{"title":"The Great Gatsby","description":"A tragic tale of love, wealth, and the elusive American Dream.","author":"F. Scott Fitzgerald","publishingYear":1927,"coverURL":"https://covers.openlibrary.org/b/id/6519016-L.jpg","id":"cc2c74c5-a91b-40b3-ab4e-f0c17ca922fc"},{"title":"Pride and Prejudice","description":"A witty and romantic critique of social class and gender expectations.","author":"Jane Austen","publishingYear":1816,"coverURL":"https://covers.openlibrary.org/b/id/8091016-L.jpg","id":"f6dee9b6-7073-4ed7-bcf7-7dcc2f0a3eef"},{"title":"The Catcher in the Rye","description":"A teenage boy’s journey through alienation and rebellion in postwar America.","author":"J.D. Salinger","publishingYear":1955,"coverURL":"https://covers.openlibrary.org/b/id/8231856-L.jpg","id":"f23e5a3d-4225-4f43-8e4e-03d1e0de6524"},{"title":"The Hobbit","description":"A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.","author":"J.R.R. Tolkien","publishingYear":1937,"coverURL":"https://covers.openlibrary.org/b/id/6979861-L.jpg","id":"a7af78af-4168-4d65-a5f1-9bd3ad8c8b21"},{"title":"Moby Dick","description":"A seafaring tale of obsession and revenge against a white whale.","author":"Herman Melville","publishingYear":1852,"coverURL":"https://covers.openlibrary.org/b/id/5554440-L.jpg","id":"4c367c4c-5be3-4eab-b929-ab05af0821ab"},{"title":"Brave New World","description":"A futuristic society driven by technology, control, and conformity.","author":"Aldous Huxley","publishingYear":1934,"coverURL":"https://covers.openlibrary.org/b/id/8775116-L.jpg","id":"5536618d-ac03-40e3-bb8f-71ffff6ee885"},{"title":"Jane Eyre","description":"A gothic romance following an orphan’s resilience and moral conviction.","author":"Charlotte Brontë","publishingYear":1850,"coverURL":"https://covers.openlibrary.org/b/id/8076764-L.jpg","id":"cab3db10-31ff-4f34-8a79-69a2ed88de30"},{"title":"Wuthering Heights","description":"A haunting love story set on the moors of northern England.","author":"Emily Brontë","publishingYear":1851,"coverURL":"https://covers.openlibrary.org/b/id/8235111-L.jpg","id":"0c3ab69f-0346-4649-b3b1-dddee3e13af1"}]}
+{
+  "books": [
+    {
+      "title": "1984",
+      "description": "A dystopian novel exploring surveillance, totalitarianism, and loss of identity.",
+      "author": "George Orwell",
+      "publishingYear": 1949,
+      "coverURL": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+      "id": "5193fe00-35fa-4794-a166-3a298a9f965e"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "description": "A profound story of racial injustice and moral growth in the American South.",
+      "author": "Harper Lee",
+      "publishingYear": 1961,
+      "coverURL": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+      "id": "d3f7a2f2-657d-4821-9227-7eb50fda3bbd"
+    },
+    {
+      "title": "The Great Gatsby",
+      "description": "A tragic tale of love, wealth, and the elusive American Dream.",
+      "author": "F. Scott Fitzgerald",
+      "publishingYear": 1927,
+      "coverURL": "https://covers.openlibrary.org/b/id/6519016-L.jpg",
+      "id": "22454070-ffeb-4e7b-b58e-5b2b870a91bd"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "description": "A witty and romantic critique of social class and gender expectations.",
+      "author": "Jane Austen",
+      "publishingYear": 1816,
+      "coverURL": "https://covers.openlibrary.org/b/id/8091016-L.jpg",
+      "id": "bd154850-8459-4632-949d-2f49ed4d01eb"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "description": "A teenage boy’s journey through alienation and rebellion in postwar America.",
+      "author": "J.D. Salinger",
+      "publishingYear": 1955,
+      "coverURL": "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+      "id": "89e7c718-bc54-4ee1-bcf4-011fa6d149b6"
+    },
+    {
+      "title": "The Hobbit",
+      "description": "A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.",
+      "author": "J.R.R. Tolkien",
+      "publishingYear": 1937,
+      "coverURL": "https://covers.openlibrary.org/b/id/6979861-L.jpg",
+      "id": "a9adc1d7-8a5f-4afd-a484-c26a7bbc86c9"
+    },
+    {
+      "title": "Moby Dick",
+      "description": "A seafaring tale of obsession and revenge against a white whale.",
+      "author": "Herman Melville",
+      "publishingYear": 1852,
+      "coverURL": "https://covers.openlibrary.org/b/id/5554440-L.jpg",
+      "id": "cafd7c6a-cb99-4946-abb7-0fd82055c651"
+    },
+    {
+      "title": "Brave New World",
+      "description": "A futuristic society driven by technology, control, and conformity.",
+      "author": "Aldous Huxley",
+      "publishingYear": 1934,
+      "coverURL": "https://covers.openlibrary.org/b/id/8775116-L.jpg",
+      "id": "d51d7aa7-6d3e-458a-a819-cf4ac013ceae"
+    },
+    {
+      "title": "Jane Eyre",
+      "description": "A gothic romance following an orphan’s resilience and moral conviction.",
+      "author": "Charlotte Brontë",
+      "publishingYear": 1850,
+      "coverURL": "https://covers.openlibrary.org/b/id/8076764-L.jpg",
+      "id": "eb3d2c10-ae78-4b6d-bb17-450d89fc0943"
+    },
+    {
+      "title": "Wuthering Heights",
+      "description": "A haunting love story set on the moors of northern England.",
+      "author": "Emily Brontë",
+      "publishingYear": 1851,
+      "coverURL": "https://covers.openlibrary.org/b/id/8235111-L.jpg",
+      "id": "049555d2-5a5b-436c-b36d-a89a1eecb10d"
+    },
+    {
+      "title": "1984",
+      "description": "A dystopian novel exploring surveillance, totalitarianism, and loss of identity.",
+      "author": "George Orwell",
+      "publishingYear": 1949,
+      "coverURL": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+      "id": "1208603a-7397-4f90-890e-c568d72ceb82"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "description": "A profound story of racial injustice and moral growth in the American South.",
+      "author": "Harper Lee",
+      "publishingYear": 1961,
+      "coverURL": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+      "id": "d62cd148-3264-4753-b5e8-07c19b278a16"
+    },
+    {
+      "title": "The Great Gatsby",
+      "description": "A tragic tale of love, wealth, and the elusive American Dream.",
+      "author": "F. Scott Fitzgerald",
+      "publishingYear": 1927,
+      "coverURL": "https://covers.openlibrary.org/b/id/6519016-L.jpg",
+      "id": "5272adec-15dd-43a4-844e-b05cf33e8842"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "description": "A witty and romantic critique of social class and gender expectations.",
+      "author": "Jane Austen",
+      "publishingYear": 1816,
+      "coverURL": "https://covers.openlibrary.org/b/id/8091016-L.jpg",
+      "id": "4cbca053-55f4-45ba-8afb-116e59db11cc"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "description": "A teenage boy’s journey through alienation and rebellion in postwar America.",
+      "author": "J.D. Salinger",
+      "publishingYear": 1955,
+      "coverURL": "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+      "id": "fbfc321f-ef2a-4af4-b96a-70d3272ed690"
+    },
+    {
+      "title": "The Hobbit",
+      "description": "A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.",
+      "author": "J.R.R. Tolkien",
+      "publishingYear": 1937,
+      "coverURL": "https://covers.openlibrary.org/b/id/6979861-L.jpg",
+      "id": "f9155e61-6575-48f6-ba05-35ac4d1f9cb2"
+    },
+    {
+      "title": "Moby Dick",
+      "description": "A seafaring tale of obsession and revenge against a white whale.",
+      "author": "Herman Melville",
+      "publishingYear": 1852,
+      "coverURL": "https://covers.openlibrary.org/b/id/5554440-L.jpg",
+      "id": "81a0dacf-c9c8-43b3-b066-27466ea9909f"
+    },
+    {
+      "title": "Brave New World",
+      "description": "A futuristic society driven by technology, control, and conformity.",
+      "author": "Aldous Huxley",
+      "publishingYear": 1934,
+      "coverURL": "https://covers.openlibrary.org/b/id/8775116-L.jpg",
+      "id": "5099f51c-3c8a-4a32-917b-ebb81a7f1caa"
+    },
+    {
+      "title": "Jane Eyre",
+      "description": "A gothic romance following an orphan’s resilience and moral conviction.",
+      "author": "Charlotte Brontë",
+      "publishingYear": 1850,
+      "coverURL": "https://covers.openlibrary.org/b/id/8076764-L.jpg",
+      "id": "5f00f472-4945-4b4c-8d43-8939c8600981"
+    },
+    {
+      "title": "Wuthering Heights",
+      "description": "A haunting love story set on the moors of northern England.",
+      "author": "Emily Brontë",
+      "publishingYear": 1851,
+      "coverURL": "https://covers.openlibrary.org/b/id/8235111-L.jpg",
+      "id": "a92097b4-ceb1-4fb5-951b-7e7ffde6dc8f"
+    },
+    {
+      "title": "1984",
+      "description": "A dystopian novel exploring surveillance, totalitarianism, and loss of identity.",
+      "author": "George Orwell",
+      "publishingYear": 1949,
+      "coverURL": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+      "id": "f751f3d4-355a-4f02-8750-92b1ede0a5cc"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "description": "A profound story of racial injustice and moral growth in the American South.",
+      "author": "Harper Lee",
+      "publishingYear": 1961,
+      "coverURL": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+      "id": "e78b57f4-22b5-4033-a315-e84aca488630"
+    },
+    {
+      "title": "The Great Gatsby",
+      "description": "A tragic tale of love, wealth, and the elusive American Dream.",
+      "author": "F. Scott Fitzgerald",
+      "publishingYear": 1927,
+      "coverURL": "https://covers.openlibrary.org/b/id/6519016-L.jpg",
+      "id": "e2a39628-1904-4ac8-93a6-da49c4275ab5"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "description": "A witty and romantic critique of social class and gender expectations.",
+      "author": "Jane Austen",
+      "publishingYear": 1816,
+      "coverURL": "https://covers.openlibrary.org/b/id/8091016-L.jpg",
+      "id": "494470d7-8f09-43ac-a64c-02c8ad277dff"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "description": "A teenage boy’s journey through alienation and rebellion in postwar America.",
+      "author": "J.D. Salinger",
+      "publishingYear": 1955,
+      "coverURL": "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+      "id": "048ac0ab-8893-481a-a0fd-e6a17ce6bcd5"
+    },
+    {
+      "title": "The Hobbit",
+      "description": "A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.",
+      "author": "J.R.R. Tolkien",
+      "publishingYear": 1937,
+      "coverURL": "https://covers.openlibrary.org/b/id/6979861-L.jpg",
+      "id": "f0b9e9bc-e85e-4894-ade4-1081ee6575db"
+    },
+    {
+      "title": "Moby Dick",
+      "description": "A seafaring tale of obsession and revenge against a white whale.",
+      "author": "Herman Melville",
+      "publishingYear": 1852,
+      "coverURL": "https://covers.openlibrary.org/b/id/5554440-L.jpg",
+      "id": "6ff266a6-d0ba-4744-b412-fd628edb67b9"
+    },
+    {
+      "title": "Brave New World",
+      "description": "A futuristic society driven by technology, control, and conformity.",
+      "author": "Aldous Huxley",
+      "publishingYear": 1934,
+      "coverURL": "https://covers.openlibrary.org/b/id/8775116-L.jpg",
+      "id": "110786a9-50f2-49ba-9420-b1e8cdedddd2"
+    },
+    {
+      "title": "Jane Eyre",
+      "description": "A gothic romance following an orphan’s resilience and moral conviction.",
+      "author": "Charlotte Brontë",
+      "publishingYear": 1850,
+      "coverURL": "https://covers.openlibrary.org/b/id/8076764-L.jpg",
+      "id": "f3cdd516-19d6-4c7a-9371-349cdf863ef9"
+    },
+    {
+      "title": "Wuthering Heights",
+      "description": "A haunting love story set on the moors of northern England.",
+      "author": "Emily Brontë",
+      "publishingYear": 1851,
+      "coverURL": "https://covers.openlibrary.org/b/id/8235111-L.jpg",
+      "id": "020046b7-98f0-4870-a5da-38982f2c30ae"
+    },
+    {
+      "title": "1984",
+      "description": "A dystopian novel exploring surveillance, totalitarianism, and loss of identity.",
+      "author": "George Orwell",
+      "publishingYear": 1949,
+      "coverURL": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+      "id": "5f98d31f-a9e2-4199-bf1f-ceb1ebbb83cc"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "description": "A profound story of racial injustice and moral growth in the American South.",
+      "author": "Harper Lee",
+      "publishingYear": 1961,
+      "coverURL": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+      "id": "ccabefb4-e5fd-4da8-b5a5-ad984afc2216"
+    },
+    {
+      "title": "The Great Gatsby",
+      "description": "A tragic tale of love, wealth, and the elusive American Dream.",
+      "author": "F. Scott Fitzgerald",
+      "publishingYear": 1927,
+      "coverURL": "https://covers.openlibrary.org/b/id/6519016-L.jpg",
+      "id": "64d577cf-0a88-486c-9fea-b06e5173edb9"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "description": "A witty and romantic critique of social class and gender expectations.",
+      "author": "Jane Austen",
+      "publishingYear": 1816,
+      "coverURL": "https://covers.openlibrary.org/b/id/8091016-L.jpg",
+      "id": "659208d0-221f-457f-92b2-a2a5122b3f89"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "description": "A teenage boy’s journey through alienation and rebellion in postwar America.",
+      "author": "J.D. Salinger",
+      "publishingYear": 1955,
+      "coverURL": "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+      "id": "21b79c4a-6ff9-49c1-891e-017e40a9e83f"
+    },
+    {
+      "title": "The Hobbit",
+      "description": "A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.",
+      "author": "J.R.R. Tolkien",
+      "publishingYear": 1937,
+      "coverURL": "https://covers.openlibrary.org/b/id/6979861-L.jpg",
+      "id": "0a38332c-a3d5-4cbc-a99d-b9d0205a4453"
+    },
+    {
+      "title": "Moby Dick",
+      "description": "A seafaring tale of obsession and revenge against a white whale.",
+      "author": "Herman Melville",
+      "publishingYear": 1852,
+      "coverURL": "https://covers.openlibrary.org/b/id/5554440-L.jpg",
+      "id": "3806511c-52d7-4ad2-8d50-c716c0181ee0"
+    },
+    {
+      "title": "Brave New World",
+      "description": "A futuristic society driven by technology, control, and conformity.",
+      "author": "Aldous Huxley",
+      "publishingYear": 1934,
+      "coverURL": "https://covers.openlibrary.org/b/id/8775116-L.jpg",
+      "id": "809208a2-cd1b-43e0-813a-7d793535cce9"
+    },
+    {
+      "title": "Jane Eyre",
+      "description": "A gothic romance following an orphan’s resilience and moral conviction.",
+      "author": "Charlotte Brontë",
+      "publishingYear": 1850,
+      "coverURL": "https://covers.openlibrary.org/b/id/8076764-L.jpg",
+      "id": "1e29a1a3-1428-4466-96e5-7acb28f03908"
+    },
+    {
+      "title": "Wuthering Heights",
+      "description": "A haunting love story set on the moors of northern England.",
+      "author": "Emily Brontë",
+      "publishingYear": 1851,
+      "coverURL": "https://covers.openlibrary.org/b/id/8235111-L.jpg",
+      "id": "833821c7-4dcf-495f-9bfd-e858ffdacb7a"
+    },
+    {
+      "title": "1984",
+      "description": "A dystopian novel exploring surveillance, totalitarianism, and loss of identity.",
+      "author": "George Orwell",
+      "publishingYear": 1949,
+      "coverURL": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+      "id": "980b4009-84c4-4f61-86ec-d80a35abb750"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "description": "A profound story of racial injustice and moral growth in the American South.",
+      "author": "Harper Lee",
+      "publishingYear": 1961,
+      "coverURL": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+      "id": "3743be42-dacd-4307-9f44-fd1f28a74a0e"
+    },
+    {
+      "title": "The Great Gatsby",
+      "description": "A tragic tale of love, wealth, and the elusive American Dream.",
+      "author": "F. Scott Fitzgerald",
+      "publishingYear": 1927,
+      "coverURL": "https://covers.openlibrary.org/b/id/6519016-L.jpg",
+      "id": "cc2c74c5-a91b-40b3-ab4e-f0c17ca922fc"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "description": "A witty and romantic critique of social class and gender expectations.",
+      "author": "Jane Austen",
+      "publishingYear": 1816,
+      "coverURL": "https://covers.openlibrary.org/b/id/8091016-L.jpg",
+      "id": "f6dee9b6-7073-4ed7-bcf7-7dcc2f0a3eef"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "description": "A teenage boy’s journey through alienation and rebellion in postwar America.",
+      "author": "J.D. Salinger",
+      "publishingYear": 1955,
+      "coverURL": "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+      "id": "f23e5a3d-4225-4f43-8e4e-03d1e0de6524"
+    },
+    {
+      "title": "The Hobbit",
+      "description": "A charming fantasy adventure of Bilbo Baggins and a dragon’s treasure.",
+      "author": "J.R.R. Tolkien",
+      "publishingYear": 1937,
+      "coverURL": "https://covers.openlibrary.org/b/id/6979861-L.jpg",
+      "id": "a7af78af-4168-4d65-a5f1-9bd3ad8c8b21"
+    },
+    {
+      "title": "Moby Dick",
+      "description": "A seafaring tale of obsession and revenge against a white whale.",
+      "author": "Herman Melville",
+      "publishingYear": 1852,
+      "coverURL": "https://covers.openlibrary.org/b/id/5554440-L.jpg",
+      "id": "4c367c4c-5be3-4eab-b929-ab05af0821ab"
+    },
+    {
+      "title": "Brave New World",
+      "description": "A futuristic society driven by technology, control, and conformity.",
+      "author": "Aldous Huxley",
+      "publishingYear": 1934,
+      "coverURL": "https://covers.openlibrary.org/b/id/8775116-L.jpg",
+      "id": "5536618d-ac03-40e3-bb8f-71ffff6ee885"
+    },
+    {
+      "title": "Jane Eyre",
+      "description": "A gothic romance following an orphan’s resilience and moral conviction.",
+      "author": "Charlotte Brontë",
+      "publishingYear": 1850,
+      "coverURL": "https://covers.openlibrary.org/b/id/8076764-L.jpg",
+      "id": "cab3db10-31ff-4f34-8a79-69a2ed88de30"
+    },
+    {
+      "title": "Wuthering Heights",
+      "description": "A haunting love story set on the moors of northern England.",
+      "author": "Emily Brontë",
+      "publishingYear": 1851,
+      "coverURL": "https://covers.openlibrary.org/b/id/8235111-L.jpg",
+      "id": "0c3ab69f-0346-4649-b3b1-dddee3e13af1"
+    },
+    {
+      "id": "59d8f2d2-b637-4665-97f4-707447722aba",
+      "title": "abc",
+      "author": "ipq",
+      "publishedYear": "1234",
+      "description": "def"
+    }
+  ]
+}
