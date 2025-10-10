@@ -442,5 +442,11 @@
       "publishingYear": "1234",
       "description": "abcd"
     }
+  ],
+  "users": [
+    {
+      "username": "user1234",
+      "password": "password1234"
+    }
   ]
 }

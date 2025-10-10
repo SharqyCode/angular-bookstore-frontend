@@ -25,7 +25,7 @@ export class UpdateBookComponent implements OnInit {
   }
 
   updateBook(bookProps: object) {
-    console.log('Updating Book', bookProps);
+    console.log('Updating Book...');
     this.bookService.updateBook(this.id!, bookProps).subscribe((data) => {
       console.log('Updated Book:\n', data);
     });
