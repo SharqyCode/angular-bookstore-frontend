@@ -1,2 +1,2 @@
 <h1 class="text-center my-5">Add Book</h1>
-<app-book-form></app-book-form>
+<app-book-form [operation]="operation" (submitFormEvent)="addBook($event)"></app-book-form>

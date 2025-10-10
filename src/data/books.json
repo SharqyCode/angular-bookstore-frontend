@@ -404,8 +404,43 @@
       "id": "59d8f2d2-b637-4665-97f4-707447722aba",
       "title": "abc",
       "author": "ipq",
-      "publishedYear": "1234",
+      "publishingYear": "1234",
       "description": "def"
+    },
+    {
+      "id": "ed1460fe-aefe-47a0-a38c-e0077ae9c004",
+      "title": "ab",
+      "author": "ab",
+      "publishingYear": "123",
+      "description": "ab"
+    },
+    {
+      "id": "037b3607-65dc-4f42-a276-99b34df048d9",
+      "title": "qq",
+      "author": "qq",
+      "publishingYear": "1234",
+      "description": "qq"
+    },
+    {
+      "id": "9b95183d-5f55-4590-a2b4-820fdbd2b51e",
+      "title": "",
+      "author": "",
+      "publishingYear": "",
+      "description": "ww"
+    },
+    {
+      "id": null,
+      "title": null,
+      "author": null,
+      "publishingYear": null,
+      "description": "rr"
+    },
+    {
+      "id": "9ac9ad08-fa39-4b0e-865b-b7fd64cd78a1",
+      "title": "abcdee4e4e4",
+      "author": "abcd",
+      "publishingYear": "1234",
+      "description": "abcd"
     }
   ]
 }
