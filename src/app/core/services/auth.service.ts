@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   loggedUser: User | null = null;
-  private apiUrl = 'http://localhost:3000/users';
+  private apiUrl = 'http://localhost:5000/register';
   constructor(private http: HttpClient, private router: Router) {}
 
   getAllUsers(): Observable<any> {
@@ -33,4 +33,8 @@ export class AuthService {
       }
     });
   }
+  registerUser(newUser: User): Observable<any> {
+  return this.http.post(this.apiUrl, newUser);
+}
+
 }
