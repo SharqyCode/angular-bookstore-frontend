@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class AuthService {
   private apiUrl = 'http://localhost:5000/register';
   private loginUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/login';
-  private usersUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/u/users';
+  private usersUrl =
+    'https://nodejs-bookstore-api-vercel.vercel.app/api/u/users';
   loggedUser: User | null = null;
 
   private loggedIn = new BehaviorSubject<boolean>(false);
