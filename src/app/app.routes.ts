@@ -9,7 +9,7 @@ import { BooksComponent } from './features/books/components/book-display/book-di
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: '/login', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {
     path: 'books',
