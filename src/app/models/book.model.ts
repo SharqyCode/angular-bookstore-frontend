@@ -1,8 +1,8 @@
 export default interface Book {
-  id: string;
+  bookId: string;
   title: string;
-  description?: string;
+  genre?: string;
   author: string;
-  publishingYear?: number;
+publishedYear?: number;
   coverURL?: string;
 }

@@ -11,14 +11,14 @@ export class BookService {
 
   constructor(private http: HttpClient) {}
 
-  getBooks(): Observable<Book[]> {
-    return this.http
-      .get<{ status: string; data: Book[] }>(this.apiUrl)
-      .pipe(map((response) => response.data));
-  }
-  deleteBook(id: string): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/${id}`);
-  }
+getBooks(): Observable<Book[]> {
+  return this.http.get<{ status: string; data: Book[] }>(this.apiUrl)
+    .pipe(map(response => response.data));
+}
+deleteBook(id: string): Observable<any> {
+  return this.http.delete(`${this.apiUrl}/delete/${id}`);
+}
+
 
   getBookById(bookId: string): Observable<any> {
     return this.http.get(

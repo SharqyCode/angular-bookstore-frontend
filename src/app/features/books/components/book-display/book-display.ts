@@ -19,7 +19,9 @@ export class BooksComponent implements OnInit {
   ngOnInit(): void {
     this.bookService.getBooks().subscribe({
       next: (data) => {
+        console.log(data[0].bookId)
         this.books = data;
+        
         this.loading = false;
       },
       error: (error) => {
@@ -35,7 +37,7 @@ export class BooksComponent implements OnInit {
     if (confirm('Are you sure you want to delete this book?')) {
       this.bookService.deleteBook(id).subscribe({
         next: () => {
-          this.books = this.books.filter((b) => b.id !== id);
+          this.books = this.books.filter((b) => b.bookId !== id);
         },
         error: (err) => {
           console.error('Error deleting book:', err);
