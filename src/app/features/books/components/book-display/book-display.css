@@ -1,0 +1,13 @@
+h2 {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+td, th {
+  vertical-align: middle;
+}
