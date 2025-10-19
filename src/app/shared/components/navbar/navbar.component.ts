@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
+  imports: [RouterLink],
 })
 export class NavbarComponent {
   isLoggedIn = false;
@@ -17,7 +18,7 @@ export class NavbarComponent {
   }
 
   logout() {
-    this.authService.logout();
+    // this.authService.logout();
     this.router.navigate(['/login']);
   }
 }
