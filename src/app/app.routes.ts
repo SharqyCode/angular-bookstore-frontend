@@ -23,12 +23,12 @@ export const routes: Routes = [
       {
         path: 'add',
         component: AddBookComponent,
-        canActivate: [authGuard],
+        // canActivate: [authGuard],
       },
       {
         path: 'update/:id',
         component: UpdateBookComponent,
-        canActivate: [authGuard],
+        // canActivate: [authGuard],
       },
     ],
   },

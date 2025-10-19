@@ -15,29 +15,26 @@
       </thead>
       <tbody>
         @if (books.length > 0) {
-          @for (book of books; track book.bookId; let i = $index) {
-            <tr>
-              <td>{{ i + 1 }}</td>
-              <td>{{ book.title }}</td>
-              <td>{{ book.author }}</td>
-              <td>{{ book.genre }}</td>
-              <td>{{ book.publishedYear || '—' }}</td>
-              <td>
-                <button
-                  class="btn btn-danger btn-sm"
-                  (click)="deleteBook(book.bookId)"
-                >
-                  🗑️ Delete
-                </button>
-              </td>
-            </tr>
-          }
+        @for (book of books; track book.bookId; let i = $index) {
+        <tr>
+          <td>{{ i + 1 }}</td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.genre }}</td>
+          <td>{{ book.publishedYear || '—' }}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" (click)="deleteBook(book.bookId)">
+              🗑️ Delete
+            </button>
+          </td>
+        </tr>
+        }
         } @else {
-          <tr>
-            <td colspan="6" class="text-center text-muted py-3">
-              No books available 📭
-            </td>
-          </tr>
+        <tr>
+          <td colspan="6" class="text-center text-muted py-3">
+            No books available 📭
+          </td>
+        </tr>
         }
       </tbody>
     </table>

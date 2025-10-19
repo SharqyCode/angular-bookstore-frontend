@@ -11,14 +11,14 @@ export class BookService {
 
   constructor(private http: HttpClient) {}
 
-getBooks(): Observable<Book[]> {
-  return this.http.get<{ status: string; data: Book[] }>(this.apiUrl)
-    .pipe(map(response => response.data));
-}
-deleteBook(id: string): Observable<any> {
-  return this.http.delete(`${this.apiUrl}/delete/${id}`);
-}
-
+  getBooks(): Observable<Book[]> {
+    return this.http
+      .get<{ status: string; data: Book[] }>(this.apiUrl)
+      .pipe(map((response) => response.data));
+  }
+  deleteBook(id: string): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/delete/${id}`);
+  }
 
   getBookById(bookId: string): Observable<any> {
     return this.http.get(
@@ -27,7 +27,10 @@ deleteBook(id: string): Observable<any> {
   }
 
   addBook(book: Book): Observable<any> {
-    return this.http.post(this.apiUrl, book);
+    return this.http.post(
+      `https://nodejs-bookstore-api-vercel.vercel.app/api/books/addBook`,
+      book
+    );
   }
 
   updateBook(id: string, newBookProps: object): Observable<any> {
