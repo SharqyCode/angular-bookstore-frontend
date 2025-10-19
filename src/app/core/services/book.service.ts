@@ -7,21 +7,23 @@ import Book from '../../models/book.model';
   providedIn: 'root',
 })
 export class BookService {
-  private apiUrl = 'http://localhost:5000/api/books';
+  private apiUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/api/books';
 
   constructor(private http: HttpClient) {}
 
-getBooks(): Observable<Book[]> {
-  return this.http.get<{ status: string; data: Book[] }>(this.apiUrl)
-    .pipe(map(response => response.data));
-}
-deleteBook(id: string): Observable<any> {
-  return this.http.delete(`${this.apiUrl}/${id}`);
-}
-
+  getBooks(): Observable<Book[]> {
+    return this.http
+      .get<{ status: string; data: Book[] }>(this.apiUrl)
+      .pipe(map((response) => response.data));
+  }
+  deleteBook(id: string): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
 
   getBookById(bookId: string): Observable<any> {
-    return this.http.get(`http://localhost:3000/books/${bookId}`);
+    return this.http.get(
+      `https://nodejs-bookstore-api-vercel.vercel.app/api/books/${bookId}`
+    );
   }
 
   addBook(book: Book): Observable<any> {
@@ -29,6 +31,9 @@ deleteBook(id: string): Observable<any> {
   }
 
   updateBook(id: string, newBookProps: object): Observable<any> {
-    return this.http.patch(`http://localhost:3000/books/${id}`, newBookProps);
+    return this.http.patch(
+      `https://nodejs-bookstore-api-vercel.vercel.app/api/books/${id}`,
+      newBookProps
+    );
   }
 }
