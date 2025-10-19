@@ -47,7 +47,7 @@ export class AuthService {
         localStorage.setItem('token', 'dummy-jwt-token');
         this.loggedIn.next(true);
         // localStorage.setItem('username', user.username);
-        this.router.navigate(['books']);
+        this.router.navigate(['/books']);
       }
     });
   }
