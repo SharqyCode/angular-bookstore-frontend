@@ -15,17 +15,17 @@
       </thead>
       <tbody>
         @if (books.length > 0) {
-          @for (book of books; track book.id; let i = $index) {
+          @for (book of books; track book.bookId; let i = $index) {
             <tr>
               <td>{{ i + 1 }}</td>
               <td>{{ book.title }}</td>
               <td>{{ book.author }}</td>
-              <td>{{ book.description || '—' }}</td>
-              <td>{{ book.publishingYear || '—' }}</td>
+              <td>{{ book.genre }}</td>
+              <td>{{ book.publishedYear || '—' }}</td>
               <td>
                 <button
                   class="btn btn-danger btn-sm"
-                  (click)="deleteBook(book.id)"
+                  (click)="deleteBook(book.bookId)"
                 >
                   🗑️ Delete
                 </button>
