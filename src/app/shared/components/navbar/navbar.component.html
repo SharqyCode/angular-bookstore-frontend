@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <!-- Home (logo) -->
+    <a class="navbar-brand" routerLink="/home">📚 BookStore</a>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/books" routerLinkActive="active">Books</a>
+        </li>
+
+        <!-- Only visible when logged in -->
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" routerLink="/books/add" routerLinkActive="active">Add Book</a>
+        </li>
+      </ul>
+
+      <!-- Login / Logout Button -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
