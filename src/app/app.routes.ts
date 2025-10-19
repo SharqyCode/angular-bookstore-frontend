@@ -8,29 +8,29 @@ import { RegisterComponent } from './features/auth/pages/regestration/register.c
 import { BooksComponent } from './features/books/components/book-display/book-display';
 
 export const routes: Routes = [
-  { path: '', component: HomepageComponent, canActivate: [authGuard] },
+  { path: '', component: HomepageComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'register', component:RegisterComponent },
+  { path: 'register', component: RegisterComponent },
   {
     path: 'books',
-   // canActivate: [authGuard],
+    // canActivate: [authGuard],
     title: 'App | books',
     children: [
-       {
-        path: '', 
+      {
+        path: '',
         component: BooksComponent,
       },
       {
         path: 'add',
         component: AddBookComponent,
+        canActivate: [authGuard],
       },
       {
         path: 'update/:id',
         component: UpdateBookComponent,
+        canActivate: [authGuard],
       },
     ],
-
-    
   },
   { path: '**', redirectTo: '' },
 ];
