@@ -9,7 +9,7 @@ import { AuthService } from '../../../core/services/auth.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  isLoggedIn = false;
+  isLoggedIn = true;
 
   constructor(private authService: AuthService, private router: Router) {
     this.authService.isLoggedIn$.subscribe(status => {
