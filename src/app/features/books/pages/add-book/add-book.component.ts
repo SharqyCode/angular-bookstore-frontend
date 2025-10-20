@@ -16,8 +16,11 @@ export class AddBookComponent {
   constructor(private bookService: BookService) {}
   addBook(book: Book) {
     console.log(book);
-    this.bookService.addBook(book).subscribe((data) => {
-      console.log('Added Book:\n', data);
+    this.bookService.addBook(book).subscribe({
+      next: (data) => {
+        console.log('Added Book:\n', data);
+      },
+      error: (err) => console.log('Error:', err),
     });
   }
 }

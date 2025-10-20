@@ -8,9 +8,12 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/api/u/register';
-  private loginUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/api/u/login';
-  private usersUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/api/u/users';
+  private apiUrl =
+    'https://nodejs-bookstore-api-vercel.vercel.app/api/u/register';
+  private loginUrl =
+    'https://nodejs-bookstore-api-vercel.vercel.app/api/u/login';
+  private usersUrl =
+    'https://nodejs-bookstore-api-vercel.vercel.app/api/u/users';
 
   loggedUser: User | null = null;
 
@@ -31,37 +34,42 @@ export class AuthService {
   registerUser(newUser: User): Observable<any> {
     return this.http.post(this.apiUrl, newUser);
   }
+  loginUser(loggingUser: User): Observable<any> {
+    return this.http.post(this.loginUrl, loggingUser);
+  }
 
   /** Authenticate login */
   loginAuth(user: User) {
-    this.getAllUsers().subscribe({
-      next: (userArr: any[]) => {
-        const foundUser = userArr.find(
-          (dbUser: any) => user.username === dbUser.username
-        );
+    this.loginUser(user).subscribe({
+      next: (res) => {
+        // const foundUser = userArr.find(
+        //   (dbUser: any) => user.username === dbUser.username
+        // );
 
-        if (!foundUser) {
-          console.log('❌ User not found');
-          return;
-        }
+        // if (!foundUser) {
+        //   console.log('❌ User not found');
+        //   return;
+        // }
 
-        if (foundUser.password === user.password) {
-          this.loggedUser = foundUser;
-          console.log('✅ Login successful:', this.loggedUser);
+        // if (foundUser.password === user.password) {
+        this.loggedUser = user;
+        console.log('✅ Login successful:', this.loggedUser);
 
-          localStorage.setItem('token', 'dummy-jwt-token');
-          localStorage.setItem('username', foundUser.username);
+        localStorage.setItem('token', res.token);
+        // localStorage.setItem('username', foundUser.username);
 
-          this.loggedIn.next(true);
-          this.router.navigate(['/books']);
-        } else {
-          console.log('❌ Incorrect password');
-        }
+        this.loggedIn.next(true);
+        this.router.navigate(['/books']);
+        // } else {
+        //   console.log('❌ Incorrect password');
+        // }
+        console.log(res);
       },
       error: (err) => {
-        console.error('Error fetching users:', err);
+        console.error('Error fetching user:', err);
       },
     });
+    return this.loginUser(user);
   }
 
   /** Logout user */

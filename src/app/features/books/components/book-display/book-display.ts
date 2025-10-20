@@ -1,27 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from '../../../../../app/core/services/book.service';
 import Book from '../../../../models/book.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-books',
-  standalone:true,
-  imports:[],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './book-display.html',
-  styleUrls: ['./book-display.css']
+  styleUrls: ['./book-display.css'],
 })
 export class BooksComponent implements OnInit {
   books: Book[] = [];
   loading = true;
   errorMessage = '';
 
-  constructor(private bookService:BookService ) {}
+  constructor(private bookService: BookService) {}
 
   ngOnInit(): void {
     this.bookService.getBooks().subscribe({
       next: (data) => {
-        console.log(data[0].bookId)
+        console.log(data[0].bookId);
         this.books = data;
-        
+
         this.loading = false;
       },
       error: (error) => {
@@ -30,8 +31,6 @@ export class BooksComponent implements OnInit {
         this.loading = false;
       },
     });
-
-
   }
   deleteBook(id: string): void {
     if (confirm('Are you sure you want to delete this book?')) {
@@ -45,7 +44,5 @@ export class BooksComponent implements OnInit {
         },
       });
     }
-}
-
-  
+  }
 }

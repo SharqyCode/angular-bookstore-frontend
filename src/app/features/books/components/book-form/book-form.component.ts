@@ -35,10 +35,9 @@ export class BookFormComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.bookForm = this.fb.group({
-      id: [uuidv4()],
       title: ['', [Validators.required, Validators.minLength(3)]],
-      author: ['', Validators.required],
-      publishingYear: ['', [Validators.pattern('^[0-9]{4}$')]],
+      author: [''],
+      publishedYear: [''],
       description: [''],
     });
   }

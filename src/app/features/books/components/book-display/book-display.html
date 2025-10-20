@@ -22,13 +22,13 @@
           <td>{{ book.author.name }}</td>
           <td>{{ book.genre }}</td>
           <td>{{ book.publishedYear || '—' }}</td>
-          <td>
+          <td class="d-flex gap-2">
             <button class="btn btn-danger btn-sm" (click)="deleteBook(book.bookId)">
               🗑️ Delete
             </button>
-            <!-- <button class="btn btn-danger btn-sm" (click)="updateBook(book.bookId)">
-              🗑️ Update
-            </button> -->
+            <button class="btn btn-warning btn-sm" routerLink="update/{{book.bookId}}">
+              ✏️ Update
+            </button>
           </td>
         </tr>
         }
