@@ -11,14 +11,14 @@ import { AuthService } from '../../../core/services/auth.service';
 export class NavbarComponent {
   isLoggedIn = true;
 
-  constructor(private authService: AuthService, private router: Router) {
-    this.authService.isLoggedIn$.subscribe(status => {
-      this.isLoggedIn = status;
-    });
-  }
+  // constructor(private authService: AuthService, private router: Router) {
+  //   this.authService.isLoggedIn$.subscribe(status => {
+  //     this.isLoggedIn = status;
+  //   });
+  // }
 
   logout() {
-    this.authService.logout();
-    this.router.navigate(['/login']);
+    // this.authService.logout();
+    // this.router.navigate(['/login']);
   }
 }
