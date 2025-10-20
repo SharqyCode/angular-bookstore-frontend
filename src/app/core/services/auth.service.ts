@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:5000/register';
+  private apiUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/register';
   private loginUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/login';
   private usersUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/api/u/users';
 
