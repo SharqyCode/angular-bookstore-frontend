@@ -10,19 +10,27 @@
         </li>
 
         <!-- Only visible when logged in -->
-        <li class="nav-item" *ngIf="isLoggedIn">
-          <a class="nav-link" routerLink="/books/add" routerLinkActive="active">Add Book</a>
-        </li>
-      </ul>
+         @if (isLoggedIn) {
+           <li class="nav-item" >
+             <a class="nav-link" routerLink="/books/add" routerLinkActive="active">Add Book</a>
+           </li>
+         </ul>
+         }
 
       <!-- Login / Logout Button -->
+      
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item" *ngIf="!isLoggedIn">
-          <a class="nav-link" routerLink="/login">Login</a>
-        </li>
-        <li class="nav-item" *ngIf="isLoggedIn">
-          <a class="nav-link" (click)="logout()">Logout</a>
-        </li>
+        @if (!isLoggedIn) {
+
+          <li class="nav-item" >
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+        }
+        @if (isLoggedIn) { 
+          <li class="nav-item">
+            <a class="nav-link" (click)="logout()">Logout</a>
+          </li>
+        }
       </ul>
     </div>
   </div>
