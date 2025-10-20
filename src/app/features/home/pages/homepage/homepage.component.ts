@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-homepage',
-  imports: [],
+  selector: 'app-home',
   templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.css'
+  styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent {
+  constructor(private router: Router) {}
 
+  goToBooks() {
+    this.router.navigate(['/books']);
+  }
 }
