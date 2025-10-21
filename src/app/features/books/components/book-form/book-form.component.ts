@@ -39,6 +39,7 @@ export class BookFormComponent implements OnInit, OnChanges {
       author: [''],
       publishedYear: [''],
       description: [''],
+      genre: [''],
     });
   }
 

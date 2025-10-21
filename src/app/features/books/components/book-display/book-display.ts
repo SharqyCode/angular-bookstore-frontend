@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { BookService } from '../../../../../app/core/services/book.service';
 import Book from '../../../../models/book.model';
 import { RouterLink } from '@angular/router';
+import { AuthService } from '../../../../core/services/auth.service';
 
 @Component({
   selector: 'app-books',
@@ -14,13 +15,15 @@ export class BooksComponent implements OnInit {
   books: Book[] = [];
   loading = true;
   errorMessage = '';
+  authService: AuthService = inject(AuthService);
+  role = this.authService.getUserRole();
 
   constructor(private bookService: BookService) {}
 
   ngOnInit(): void {
     this.bookService.getBooks().subscribe({
       next: (data) => {
-        console.log(data[0].bookId);
+        // console.log(data[0].bookId);
         this.books = data;
 
         this.loading = false;
@@ -33,6 +36,7 @@ export class BooksComponent implements OnInit {
     });
   }
   deleteBook(id: string): void {
+    if (!localStorage.getItem('token')) return;
     if (confirm('Are you sure you want to delete this book?')) {
       this.bookService.deleteBook(id).subscribe({
         next: () => {

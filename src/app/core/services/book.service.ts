@@ -7,7 +7,7 @@ import Book from '../../models/book.model';
   providedIn: 'root',
 })
 export class BookService {
-  private apiUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/api/books';
+  private apiUrl = 'http://localhost:5000/api/books';
 
   constructor(private http: HttpClient) {}
 
@@ -21,22 +21,19 @@ export class BookService {
   }
 
   getBookById(bookId: string): Observable<any> {
-    return this.http.get(
-      `https://nodejs-bookstore-api-vercel.vercel.app/api/books/${bookId}`
-    );
+    return this.http.get(`${this.apiUrl}/${bookId}`);
   }
 
   addBook(book: Book): Observable<any> {
-    return this.http.post(
-      `https://nodejs-bookstore-api-vercel.vercel.app/api/books/addBook`,
-      book
-    );
+    const token = localStorage.getItem('token');
+    return this.http.post(`${this.apiUrl}/addBook`, book, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
   }
 
   updateBook(id: string, newBookProps: object): Observable<any> {
-    return this.http.patch(
-      `https://nodejs-bookstore-api-vercel.vercel.app/api/books/${id}`,
-      newBookProps
-    );
+    return this.http.patch(`${this.apiUrl}/update/${id}`, newBookProps);
   }
 }

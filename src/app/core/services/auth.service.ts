@@ -1,13 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, tap } from 'rxjs';
 import User from '../../models/user.model';
 import { Router } from '@angular/router';
+import DecodedToken from '../../models/jwt.model';
+import { jwtDecode } from 'jwt-decode';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
+  private baseUrl = `http://localhost:5000/api/u`;
   private apiUrl =
     'https://nodejs-bookstore-api-vercel.vercel.app/api/u/register';
   private loginUrl =
@@ -27,49 +30,30 @@ export class AuthService {
 
   /** Get all users from backend */
   getAllUsers(): Observable<any> {
-    return this.http.get(this.usersUrl);
+    // return this.http.get(this.usersUrl);
+    return this.http.get(`${this.baseUrl}/users`);
   }
 
   /** Register new user */
   registerUser(newUser: User): Observable<any> {
-    return this.http.post(this.apiUrl, newUser);
+    // return this.http.post(this.apiUrl, newUser);
+    return this.http.post(`${this.baseUrl}/register`, newUser);
   }
   loginUser(loggingUser: User): Observable<any> {
-    return this.http.post(this.loginUrl, loggingUser);
+    // return this.http.post(this.loginUrl, loggingUser);
+    return this.http.post(`${this.baseUrl}/login`, loggingUser);
   }
 
   /** Authenticate login */
-  loginAuth(user: User) {
-    this.loginUser(user).subscribe({
-      next: (res) => {
-        // const foundUser = userArr.find(
-        //   (dbUser: any) => user.username === dbUser.username
-        // );
-
-        // if (!foundUser) {
-        //   console.log('❌ User not found');
-        //   return;
-        // }
-
-        // if (foundUser.password === user.password) {
+  loginAuth(user: User): Observable<any> {
+    return this.loginUser(user).pipe(
+      tap((res) => {
+        const token = res.token;
+        localStorage.setItem('token', token);
         this.loggedUser = user;
-        console.log('✅ Login successful:', this.loggedUser);
-
-        localStorage.setItem('token', res.token);
-        // localStorage.setItem('username', foundUser.username);
-
         this.loggedIn.next(true);
-        this.router.navigate(['/books']);
-        // } else {
-        //   console.log('❌ Incorrect password');
-        // }
-        console.log(res);
-      },
-      error: (err) => {
-        console.error('Error fetching user:', err);
-      },
-    });
-    return this.loginUser(user);
+      })
+    );
   }
 
   /** Logout user */
@@ -85,5 +69,12 @@ export class AuthService {
   checkLoginStatus() {
     const token = localStorage.getItem('token');
     this.loggedIn.next(!!token);
+  }
+
+  getUserRole(): string | null {
+    const token = localStorage.getItem('token');
+    if (!token) return null;
+    const decoded: DecodedToken = jwtDecode(token);
+    return decoded.role;
   }
 }

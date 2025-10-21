@@ -10,10 +10,11 @@ import { AuthService } from '../../../core/services/auth.service';
 })
 export class NavbarComponent {
   isLoggedIn = false;
-
+  role: string | null = '';
   constructor(private authService: AuthService, private router: Router) {
     this.authService.isLoggedIn$.subscribe((status) => {
       this.isLoggedIn = status;
+      this.role = this.authService.getUserRole();
     });
   }
 

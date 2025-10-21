@@ -3,6 +3,7 @@ import { BookFormComponent } from '../../components/book-form/book-form.componen
 import { BookService } from '../../../../core/services/book.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Book from '../../../../models/book.model';
+import { v4 } from 'uuid';
 
 @Component({
   selector: 'app-add-book',
@@ -12,6 +13,7 @@ import Book from '../../../../models/book.model';
 })
 export class AddBookComponent {
   operation: string = 'Add Book';
+  message: string = '';
 
   constructor(private bookService: BookService) {}
   addBook(book: Book) {
@@ -19,8 +21,12 @@ export class AddBookComponent {
     this.bookService.addBook(book).subscribe({
       next: (data) => {
         console.log('Added Book:\n', data);
+        this.message = 'Book Added Successfully';
       },
-      error: (err) => console.log('Error:', err),
+      error: (err) => {
+        console.log('Error:', err);
+        this.message = "Not Admin, can't add books";
+      },
     });
   }
 }

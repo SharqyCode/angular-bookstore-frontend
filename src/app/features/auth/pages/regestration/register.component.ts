@@ -28,8 +28,9 @@ export class RegisterComponent {
   ) {
     this.registerForm = this.fb.group({
       username: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]], // ✅ Added email
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
+      role: ['user', Validators.required],
     });
   }
 
@@ -38,18 +39,16 @@ export class RegisterComponent {
       this.authService
         .registerUser(this.registerForm.value)
         .pipe(
-          // After successful registration, switch to login observable
           switchMap((res: any) => {
             console.log('✅ Registration success:', res);
             this.message = 'Registration successful!';
-            const loginData = {
-              username: res.data.username,
-              password: res.data.password,
-            };
-            console.log('res', res);
-            console.log('loginData', loginData);
 
-            return this.authService.loginAuth(loginData);
+            // const loginData = {
+            //   username: this.registerForm.value['username'],
+            //   password: this.registerForm.value['password'],
+            // };
+
+            return this.authService.loginAuth(this.registerForm.value);
           })
         )
         .subscribe({

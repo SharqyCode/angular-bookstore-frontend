@@ -7,7 +7,7 @@ import {
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../../../core/services/auth.service';
-import { RouterLink } from "@angular/router";
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +19,11 @@ import { RouterLink } from "@angular/router";
 export class LoginComponent {
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private authService: AuthService) {
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required],
@@ -29,8 +33,15 @@ export class LoginComponent {
   onSubmit(): void {
     if (this.loginForm.valid) {
       console.log(this.loginForm.value);
-      // You can connect this to AuthService later
-      this.authService.loginAuth(this.loginForm.value);
+      this.authService.loginAuth(this.loginForm.value).subscribe({
+        next: (res) => {
+          console.log('✅ Login successful:', res);
+          this.router.navigate(['/books']);
+        },
+        error: (err) => {
+          console.error('❌ Login failed:', err);
+        },
+      });
     }
   }
 }

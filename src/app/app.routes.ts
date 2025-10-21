@@ -2,10 +2,11 @@ import { Routes } from '@angular/router';
 import { AddBookComponent } from './features/books/pages/add-book/add-book.component';
 import { UpdateBookComponent } from './features/books/pages/update-book/update-book.component';
 import { LoginComponent } from './features/auth/pages/login/login.component';
-import { authGuard } from './core/guards/auth.guard';
+import { authGuard, RoleGuard } from './core/guards/auth.guard';
 import { HomepageComponent } from './features/home/pages/homepage/homepage.component';
 import { RegisterComponent } from './features/auth/pages/regestration/register.component';
 import { BooksComponent } from './features/books/components/book-display/book-display';
+import { UnauthorizedComponent } from './pages/unauthorized/unauthorized.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -13,7 +14,6 @@ export const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   {
     path: 'books',
-    // canActivate: [authGuard],
     title: 'App | books',
     children: [
       {
@@ -23,14 +23,17 @@ export const routes: Routes = [
       {
         path: 'add',
         component: AddBookComponent,
-        // canActivate: [authGuard],
+        canActivate: [authGuard, RoleGuard],
+        data: { expectedRole: 'admin' },
       },
       {
         path: 'update/:id',
         component: UpdateBookComponent,
-        // canActivate: [authGuard],
+        canActivate: [authGuard, RoleGuard],
+        data: { expectedRole: 'admin' },
       },
     ],
   },
+  { path: 'unauthorized', component: UnauthorizedComponent },
   { path: '**', redirectTo: '' },
 ];

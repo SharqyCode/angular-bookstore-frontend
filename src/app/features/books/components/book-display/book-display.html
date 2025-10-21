@@ -10,7 +10,9 @@
           <th scope="col">Author</th>
           <th scope="col">Genre</th>
           <th scope="col">Year</th>
+          @if (role === "admin") {
           <th scope="col">Actions</th>
+          }
         </tr>
       </thead>
       <tbody>
@@ -19,10 +21,12 @@
         <tr>
           <td>{{ i + 1 }}</td>
           <td>{{ book.title }}</td>
-          <td>{{ book.author.name }}</td>
+          <td>@if(book.author){{{book.author.name}}}</td>
           <td>{{ book.genre }}</td>
           <td>{{ book.publishedYear || '—' }}</td>
-          <td class="d-flex gap-2">
+          @if (role === "admin")
+          {
+          <td class="d-flex gap-2 flex-wrap">
             <button class="btn btn-danger btn-sm" (click)="deleteBook(book.bookId)">
               🗑️ Delete
             </button>
@@ -30,6 +34,7 @@
               ✏️ Update
             </button>
           </td>
+          }
         </tr>
         }
         } @else {
