@@ -10,7 +10,7 @@ import { jwtDecode } from 'jwt-decode';
   providedIn: 'root',
 })
 export class AuthService {
-  private baseUrl = `http://localhost:5000/api/u`;
+  private baseUrl = `https://nodejs-bookstore-api-vercel.vercel.app/api/u`;
   private apiUrl =
     'https://nodejs-bookstore-api-vercel.vercel.app/api/u/register';
   private loginUrl =

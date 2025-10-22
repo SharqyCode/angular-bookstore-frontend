@@ -7,7 +7,7 @@ import Book from '../../models/book.model';
   providedIn: 'root',
 })
 export class BookService {
-  private apiUrl = 'http://localhost:5000/api/books';
+  private apiUrl = 'https://nodejs-bookstore-api-vercel.vercel.app/api/books';
 
   constructor(private http: HttpClient) {}
 
